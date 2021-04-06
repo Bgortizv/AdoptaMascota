@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Inicio";
+}
+
+<div class="jumbotron">
+    <h1> Adopta una Mascota</h1>
+    <p class="lead">Encuentra tu mascota ideal, sé felíz y salva una vida.</p>
+    <!--<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>-->
+    @Html.ActionLink("Buscar Mascota", "Adoptar", "Home", null, new { @class = "btn btn-primary btn-lg" })
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Ventajas de Adoptar</h2>
+        <p>
+            Es la oportunidad para el animal de compañía de iniciar la travesía por su pronta recuperación, al brindársele amor y cariño,
+            con lo que mejorará su calidad de vida también ayuda a subir el ánimo de los dueños. Incluso, estudios han demostrado que contribuyen con la recuperación de personas
+            enfermas por lo que favorece los lazos familiares al compartir espacios por medio de juego y deporte con las mascotas, tanto perros como gatos y
+            Las mascotas aportan al establecimiento de comportamientos de responsabilidad ante la necesidad de gatos y perros de tener alimento diario y cuidados en sanidad y embellecimiento periódicos.
+        </p>
+        <p><a class="btn btn-default" href="">Ver más &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Proceso de Adopción</h2>
+        <p>Una mascota es un lazo para toda la vida, entra y conoce a tu amigo ideal.</p>
+        <p><a class="btn btn-default" href="">Ver más &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Donativos</h2>
+        <p>Si aún no te decides, puedes ayudarnos a cuidar a todos nuestros amiguitos con un pequeño aporte económico.</p>
+        <p><a class="btn btn-default" href="">Ver más &raquo;</a></p>
+    </div>
+</div>
