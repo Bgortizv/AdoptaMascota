@@ -1,0 +1,30 @@
+﻿@model AdoptarMascota.Models.Mascota
+@{
+    ViewBag.Title = "Contacto";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<section class="content jumbotron">
+    @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.Nombre, "Nombre")
+            @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control", placeholder = "Nombre de la mascota" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Edad, "Edad")
+            @Html.TextBoxFor(m => m.Edad, new { @class = "form-control", placeholder = "Edad de la mascota" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Descrip, "Características de la mascota")
+            @Html.TextAreaFor(m => m.Descrip, new { @class = "form-control", placeholder = "Sobre la mascota" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.CorreoContacto, "Correo de Contacto")
+            @Html.TextBoxFor(m => m.CorreoContacto, new { @class = "form-control", type="email"})
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    }
+</section>

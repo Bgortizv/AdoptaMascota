@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Inicio";
+}
+
+<div class="jumbotron">
+    <h1>Adopta Una Mascota</h1>
+    <p class="lead">Encuentra tu mascota perfecta, será felíz salvando una vida!</p>
+    @Html.ActionLink("Buscar Mascota", "Adoptar", "Home", null, new { @class = "btn btn-primary btn-lg" })
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Ventajas de adoptar</h2>
+        <p>
+            Adoptar unas mascota es una oportunidad de mejorar la calidad de vida del animal,
+            este tendrá un vínculo afectivo muy especial contigo en agradecimiento por haberlo adoptado en tu vida.
+            Así estarás ayudando a otras mascotas en adopción, ya que contribuyes a reducir el número de perros y gatos 
+            que viven en los refugios, así como al apoyar el valioso trabajo de estas organizaciones.
+        </p>
+        <p><a class="btn btn-default" href="#">Más info &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Proceso de Adopción</h2>
+        <p>Es un proceso sencillo que cambiará tu vida</p>
+        <p><a class="btn btn-default" href="#">Dale aquí &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Donaciones</h2>
+        <p>No contamos con apoyos gubernamentales así que tu cada granito de arena cuenta.</p>
+        <p><a class="btn btn-default" href="#">Donar &raquo;</a></p>
+    </div>
+</div>

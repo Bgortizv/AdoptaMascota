@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace MiPrimerApp
+namespace AdoptarMascota
 {
     public class BundleConfig
     {

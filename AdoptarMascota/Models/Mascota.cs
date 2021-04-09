@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MiPrimerApp.Models
+namespace AdoptarMascota.Models
 {
     public class Mascota
     {
-        public string nombre { get; set; }
+        public string Nombre { get; set; }
         public string Edad { get; set; }
         public string Descrip { get; set; }
-        public string EmailContacto { get; set; }
-        public bool Adoptada { get; set; } 
+        public string CorreoContacto { get; set; }
+        public bool Adoptado { get; set; }
     }
 }
